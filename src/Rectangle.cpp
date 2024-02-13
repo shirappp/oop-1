@@ -1,21 +1,18 @@
 #include <iostream>
 #include "Rectangle.h"
 
-Rectangle::Rectangle(int length, int width){
-    length=length;
-    width=width;
-};
+Rectangle::Rectangle(double l, double w) : length(l), width(w) {}
 
-int Rectangle::getLength(){ 
+double Rectangle::getLength() const { 
     
     return length;
 };
 
-int Rectangle::getWidth(){ 
+double Rectangle::getWidth() const { 
     
     return width;
 };
 
-int Rectangle::square(){
-    return this->getLength() * this->getWidth();
+double Rectangle::square() const {
+    return width * length;
 };

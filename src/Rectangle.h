@@ -1,18 +1,15 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
 #include <iostream>
 
 
 
 class Rectangle
 {
-
-    int length;
-    int width;
+private:    
+    double length;
+    double width;
 public:
-    Rectangle(int length, int width);
-    int square();
-    int getLength();
-    int getWidth();
+    Rectangle(double l, double w);
+    double square() const;
+    double getLength() const;
+    double getWidth() const;
 };
-#endif

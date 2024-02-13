@@ -1,12 +1,13 @@
 #include <iostream>
-#include "Rectangle.cpp"
 #include "Rectangle.h"
 
 int main()
 {
-    Rectangle rectangle(5,5);
-    int square = rectangle.square();
-    std::cout<<square<<std::endl;
+    Rectangle rectangle(5.0, 5.0);
+    std::cout << "Length: " << rectangle.getLength() << std::endl;
+    std::cout << "Width: " << rectangle.getWidth() << std::endl;
+    std::cout << "Square: " << rectangle.square() << std::endl;
+
     return 0;
 
 }
