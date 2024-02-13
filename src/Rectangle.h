@@ -1,4 +1,6 @@
-#include <iostream>
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
+
 
 
 
@@ -13,3 +15,4 @@ public:
     double getLength() const;
     double getWidth() const;
 };
+#endif
